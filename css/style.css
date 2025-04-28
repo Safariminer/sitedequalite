@@ -1,0 +1,235 @@
+/* ##### Propriétés CSS qui affectent toutes les sections ##### */
+
+
+*{
+    margin:0;
+}
+
+h1,h2,h3,p{
+    text-align:center;
+    
+}
+
+@keyframes a{
+    from{
+        rotate: 300deg;
+    }
+    to{
+        rotate: -300deg;
+    }
+}
+
+h1{
+    font-family: 'Comic Sans MS', sans-serif;
+    color:magenta;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    font-size: 100px;
+    rotate: -15deg;
+    animation-name: a;
+    animation-duration: 520ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes asdf{
+    from{
+        width: 1350px; /* occuper 60% de l'écran */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        rotate: 0deg;
+    }
+    to{
+        width: 3920px; /* occuper 60% de l'écran */
+        margin-left: 482px;
+        margin-right: 12px;
+        margin-top: 50px;
+        margin-bottom: 975px;
+        rotate: 6482deg;
+    }
+}
+
+html{
+    background: linear-gradient(darkblue, black, darkred) fixed; /* couleur de fond du site */
+    
+}
+body{
+    background: linear-gradient(0.25turn, #00000000, black, black, #00000000)fixed;
+    padding: 10px 0px;
+    font-family: "DM Sans", sans-serif;
+}
+
+#bloc_page{
+    width: 1350px; /* occuper 60% de l'écran */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation-name: asdf;
+    animation-duration: 3284ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* ############### */
+/* ### En-tête ### */
+/* ############### */
+
+@keyframes tamere{
+    from{
+        background-color: red;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+        rotate: 54deg;
+        translate: 0 300px;
+    }
+    to{
+        background-color: magenta;
+        height: 500px;
+        border-radius: 458px 10px 0 51px;
+        rotate: 382deg;
+        translate: -10px 235px;
+    }
+}
+
+header{
+    /* background-color: #3462ca; couleur de fond de l'en-tête */
+
+    /* background: content-box radial-gradient(RED,red, YELLOW, blue, pink, yellow, orange); */
+    
+
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    rotate: 54deg;
+    translate: 0 300px;
+    animation-name: tamere;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* ################## */
+/* ### Navigation ### */
+/* ################## */
+
+#menu_hor{
+    background-color: #b59e7c; /* couleur de fond de l'en-tête */
+    height: 60px;
+}
+
+#menu_ver{
+
+    flex: 0.5;
+    background-color: #706B64; /* couleur de fond de l'en-tête */
+    order:1;
+    /* height: 60px; */
+}
+
+#menu_ver1{
+    width: 114px;
+    margin:auto;
+
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#menu_ver1 a{
+    display:block;
+    text-decoration: none;
+    color: white;
+    background-color: #000080;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #c0c0c0;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#menu_ver1 a:hover{
+    border-style: inset;
+    background-color: #6495ed;
+}
+
+
+
+/* ############### */
+/* ### Section ### */
+/* ############### */
+
+section{
+    display: flex;
+    /* background-color: #91e2ff; */
+    min-height: 650px;
+}
+
+
+/* ################## */
+/* ### Aside Left ### */
+/* ################## */
+
+#aside_left{
+    flex: 1;
+    background-color: #627d86;
+    border-right: #c2d6dd 1px solid;
+    order: 2;
+}
+
+/* ############### */
+/* ### Article ### */
+/* ############### */
+
+article{
+    flex: 3;
+    background-color: #627d86;
+    order: 3;
+    color:white;
+}
+
+/* ################### */
+/* ### Aside Right ### */
+/* ################### */
+
+#aside_right{
+    flex: 1;
+    background-color: #627d86;
+    border-left: #c2d6dd 1px solid;
+    text-align: left;
+    order: 4;
+}
+
+/* ############## */
+/* ### Footer ### */
+/* ############## */
+@keyframes test{
+    from{
+        rotate: -51deg;
+        background-color: black;
+        translate: 10px -123px;
+    }
+    to{
+        rotate: -551deg;
+        background-color: white;
+        translate: 120px -483px;
+    }
+}
+footer{
+    background-color: #ffffff; /* couleur de fond de l'en-tête */
+    height: 100px;
+    border-radius: 0 0 10px 10px;
+    rotate: -51deg;
+    translate: 10px -123px;
+    
+    animation-name: test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
